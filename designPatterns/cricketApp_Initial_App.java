@@ -45,6 +45,10 @@ class CricketData
         wickets = getLatestWickets();
         overs = getLatestOvers();
 
+        // This statement “currentScoreDisplay.update(runs,wickets,overs);” violates 
+        // one of the most important design principle “Program to interfaces, not 
+        // implementations.” as we are using concrete objects to share data rather 
+        // than abstract interfaces.
         currentScoreDisplay.update(runs, wickets, overs);
         averageScoreDisplay.update(runs, wickets, overs);
     }
