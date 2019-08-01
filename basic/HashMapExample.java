@@ -13,6 +13,10 @@ public class HashMapExample {
         System.out.println("Tutorial: " + map);
 
         // remove value of key 5
+        map.remove(5);
         System.out.println("Tutorial After Remove: " + map);
+        System.out.println(map.keySet());
+        System.out.println(map.values());
+        System.out.println(map.isEmpty());
     }
 }
