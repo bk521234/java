@@ -88,7 +88,8 @@ class ShoppingCartClient {
         ItemElement[] items = new ItemElement[]{new Book(20, "1234"),
                                                 new Book(100, "5678"),
                                                 new Fruit(10, 2, "Banana"),
-                                                new Fruit(5, 5, "Apple")};
+                                                new Fruit(5, 5, "Apple")
+                                            };
         int total = calculatorPrice(items);
         System.out.println("Totla Cost = " + total);
     }
